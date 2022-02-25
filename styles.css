@@ -1,0 +1,97 @@
+body{
+    background-color: #F9F4F0;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.logo {
+display: flex;
+    width: 23%;
+    padding: 1%;
+    text-align: left;
+
+}
+
+.topnav{
+    display: flex;
+    width: 73%;
+    padding: 1%;
+     font-size: 28px;
+     justify-content: flex-end;
+     overflow: hidden;
+
+}
+.topnav a {
+float: left;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.topnav a:hover {
+    background-color: rgba(243, 167, 131, 0.938);
+    color: black;}
+
+<!--  My UX Skills section coded-->
+
+#heroGrid{
+    margin: 0px 5%;
+    display: grid;
+    min-height: 900px;
+    height: 140vh;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+    "peachBox myPicture"
+    "CTA myPicture";
+
+}
+
+#peachBox {
+    grid-area: peachBox;
+    he
+
+    background-image: url("../images/pop\ up\ box\ 2.png");
+  }
+  
+  #myPicture {
+    grid-area: myPicture;
+    position: right;
+    padding-left: 1350px;
+    background-repeat: no-repeat;
+
+    
+  }
+  
+  #CTA {
+    grid-area: CTA;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  #headline {
+    background-color: #FAE7D7;
+    position: absolute;
+    right: 655px;
+    top: 190px;
+    padding: 25px 10px;
+    max-width: 550px;
+    height: 570px;}
+
+    heroGridArea {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        position: relative; }
