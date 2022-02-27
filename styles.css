@@ -44,54 +44,129 @@ float: left;
 
 <!--  My UX Skills section coded-->
 
-#heroGrid{
-    margin: 0px 5%;
-    display: grid;
-    min-height: 900px;
-    height: 140vh;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
-    grid-template-areas:
-    "peachBox myPicture"
-    "CTA myPicture";
+
+.myIntro {
+    display: flex;
+   
+    background-color: #FAE7D7;
+    padding: 15px;
+  }
+  
+.right {
+    float: right;
+    padding-right: 25px;
+    font-size: 28px ;
+    border-radius: 25% 0% 0% 0%;
+   
+}
+h1{font-size: 42px;
+color: #ca4405;
+font-family: 'Playfair Display SC', serif;
+margin-left: 10%;
+}
+p{ 
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10%;
+  
 
 }
-
-#peachBox {
-    grid-area: peachBox;
-    he
-
-    background-image: url("../images/pop\ up\ box\ 2.png");
-  }
-  
-  #myPicture {
-    grid-area: myPicture;
-    position: right;
-    padding-left: 1350px;
-    background-repeat: no-repeat;
-
-    
-  }
-  
-  #CTA {
-    grid-area: CTA;
-    justify-content: space-around;
-    cursor: pointer;
-  }
-  
-  #headline {
+.left {
+    display: left;
+    margin-left: 30%;
     background-color: #FAE7D7;
-    position: absolute;
-    right: 655px;
-    top: 190px;
-    padding: 25px 10px;
-    max-width: 550px;
-    height: 570px;}
+}
 
-    heroGridArea {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        display: flex;
-        position: relative; }
+
+button {
+  margin-left: 10%;
+  margin-top: 8%;
+  
+    color: rgb(228, 100, 15);
+    padding: 12 30 12 30;
+    background-color: #f0c6ad; 
+  border:#ca4405
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  border-top-left-radius:20px; 
+}
+
+
+<!--  My UX Skills section coded-->
+
+.subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+  }
+  #categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 1fr ;
+    grid-template-areas:
+    "project1 "
+    "project2 "
+    "project3 "
+    "project4";
+  }
+  
+  #project1 {
+    grid-area: project1;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 70%;
+    background-image: url("../UX_UI_HW_18_Coding/images/Frame\ 62.png");
+  
+  }
+  #project2{
+    grid-area: project2;
+    padding-top: 30%;
+    padding-left: 5%;
+    padding-right: 70%;
+    background-image: url("../UX_UI_HW_18_Coding/images/Frame\ 63.png");
+  }
+  
+  #project3 {
+    grid-area: project3;
+    padding-top: 30%;
+    padding-left: 5%;
+    padding-right: 70%;
+    width: 290px;
+    background-image: url("../UX_UI_HW_18_Coding/images/Frame\ 65.png");
+  }
+  
+  #project4 {
+    grid-area: project4;
+    padding-top:30%;
+    padding-left: 5%;
+    padding-right: 70%;
+    width: 290px;
+    background-image: url("../UX_UI_HW_18_Coding/images/Frame\ 64.png");
+   
+  }
+  
+  
+  
+  .projectGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 25px;
+    cursor: pointer;
+    display: grid;
+    align-content:flex-start;
+  }
+  .heading {
+    padding: 15px;
+    height: 25px;
+    color: rgb(0, 0, 0);
+    font-size:28px;
+    font-family:  'Playfair Display SC', serif; 
+    cursor: pointer
+  }
