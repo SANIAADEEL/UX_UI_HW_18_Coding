@@ -42,8 +42,7 @@ float: left;
     background-color: rgba(243, 167, 131, 0.938);
     color: black;}
 
-<!--  My UX Skills section coded-->
-
+/*--  My UX Skills section coded-*/
 
 .myIntro {
     display: flex;
@@ -91,11 +90,12 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 28px;
-  border-top-left-radius:20px; 
+  border-top-left-radius:20px;
+  cursor: pointer; 
 }
 
 
-<!--  My UX Skills section coded-->
+/* My UX Skills section coded */
 
 .subHeading {
     text-align: center;
@@ -107,8 +107,8 @@ button {
     margin: 0px 5%;
     display: grid;
     flex-direction: row;
-    grid-template-rows: 300px 300px 300px 300px;
-    grid-template-columns: 1fr ;
+    grid-template-rows: 600px 300px 300px 300px;
+    
     grid-template-areas:
     "project1 "
     "project2 "
@@ -121,14 +121,18 @@ button {
     padding-top: 20%;
     padding-left: 5%;
     padding-right: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-image: url("../UX_UI_HW_18_Coding/images/Frame\ 62.png");
   
   }
   #project2{
     grid-area: project2;
-    padding-top: 30%;
+    padding-top: 20%;
     padding-left: 5%;
     padding-right: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-image: url("../UX_UI_HW_18_Coding/images/Frame\ 63.png");
   }
   
@@ -166,7 +170,50 @@ button {
     padding: 15px;
     height: 25px;
     color: rgb(0, 0, 0);
-    font-size:28px;
+    font-size:20px;
     font-family:  'Playfair Display SC', serif; 
-    cursor: pointer
+    cursor: pointer;
+  }
+button1 {
+  cursor: pointer;
+  width: 16px;
+}
+
+.small{ 
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  bottom: 0;
+  justify-content: space-evenly;
+
+
+}
+.icon {height: 24px;
+width: 24px;
+display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Media Queries*/
+  
+
+
+  @media only screen and (max-width: 600px){
+    .topnav{display:none}
+    .subHeading{position: static
+      margin: 20px;}
+      #catagoryGrid { 
+        grid-template-areas:
+        "project1 "
+        "project2 "
+        "project3 "
+        "project4";}
+
   }
