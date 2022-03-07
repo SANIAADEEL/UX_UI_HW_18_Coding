@@ -107,8 +107,8 @@ button {
     margin: 0px 5%;
     display: grid;
     flex-direction: row;
-    grid-template-rows: 600px 300px 300px 300px;
-    
+    grid-template-rows: 300px 300px 300px 300px
+    grid-template-column: 1fr;
     grid-template-areas:
     "project1 "
     "project2 "
@@ -210,10 +210,14 @@ display: flex;
     .subHeading{position: static
       margin: 20px;}
       #catagoryGrid { 
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
         grid-template-areas:
-        "project1 "
-        "project2 "
-        "project3 "
+        "project1"
+        "project2"
+        "project3"
         "project4";}
+        {height: 1px 16px;}
+
 
   }
